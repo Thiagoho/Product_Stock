@@ -25,7 +25,7 @@ public class Program {
 		 
 		 var product = new Product(name, price, quantity);
 		 
-		 System.out.println(product.name() + ", " + "R$" + product.price() + "," + product.quantity());
+		 System.out.println(product);
 		sc.close();
 
 	}
