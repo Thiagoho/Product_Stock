@@ -1,10 +1,10 @@
-# Controle de Estoque com Java Moderno
+### Projeto da classe (UML)
+# <img width="1205" height="556" alt="image" src="https://github.com/user-attachments/assets/3fd50823-bf38-4220-b79a-77cdd259ed69" />
+# Product Stock
 
-Este projeto foi desenvolvido em **Java Moderno**, utilizando **Record**, com o objetivo de praticar os conceitos de Programação Orientada a Objetos.
+Projeto desenvolvido em **Java** com o objetivo de praticar os conceitos fundamentais de **Programação Orientada a Objetos (POO)**.
 
-## Sobre o projeto
-
-O sistema realiza o controle de um produto em estoque, permitindo cadastrar suas informações e atualizar a quantidade disponível por meio de entradas e saídas de estoque.
+O sistema realiza o cadastro de um produto, permitindo informar seu nome, preço e quantidade em estoque. Após o cadastro, o usuário pode adicionar ou remover unidades do estoque, enquanto o sistema atualiza automaticamente a quantidade disponível e o valor total dos produtos armazenados.
 
 Durante a execução do programa são realizadas as seguintes operações:
 
@@ -17,13 +17,13 @@ Durante a execução do programa são realizadas as seguintes operações:
 
 ## Tecnologias utilizadas
 
-- Java 23
-- Java Record
-- Programação Orientada a Objetos (POO)
-- Métodos
-- Encapsulamento
-- Scanner
-- Maven (opcional)
+* Java
+* Programação Orientada a Objetos (POO)
+* Classes e Objetos
+* Métodos
+* Encapsulamento de comportamentos
+* Scanner para entrada de dados
+* Locale para formatação numérica
 
 ## Estrutura do projeto
 
@@ -34,46 +34,40 @@ src
 └── entities
     └── Product.java
 ```
+## Fluxo do sistema
+
+1. O usuário informa o nome do produto.
+2. Informa o preço do produto.
+3. Informa a quantidade inicial em estoque.
+4. O sistema exibe os dados do produto.
+5. O usuário adiciona novas unidades ao estoque.
+6. O sistema atualiza e exibe os novos dados.
+7. O usuário remove unidades do estoque.
+8. O sistema apresenta o estoque atualizado juntamente com o valor total dos produtos.
+
 ## 💻 Exemplo de execução
-
 ```text
-Enter product data:
+Enter producto data:
+Name: TV
+Price: 900.00
+Quantity in Stock: 10
 
-Name: Notebook
-Price: 3500.00
-Quantity in stock: 10
+TV, $900.00, 10 units, Total: $ 9000.00
 
-Product data:
-Notebook, $3500.00, 10 units, Total: $35000.00
+Enter the number of product to be add in stock: 5
 
-Enter the number of products to be added in stock:
-5
+Updated data: TV, $900.00, 15 units, Total: $ 13500.00
 
-Updated data:
-Notebook, $3500.00, 15 units, Total: $52500.00
+Enter the number of product to be removed from stock: 3
 
-Enter the number of products to be removed from stock:
-3
+Updated data: TV, $900.00, 12 units, Total: $ 10800.00
 
-Updated data:
-Notebook, $3500.00, 12 units, Total: $42000.00
 ```
+## Desenvolvido por **Thiago Sales** 
 
-## Conceitos praticados
+## Curso de referência
 
-- Criação de objetos
-- Classes e Records
-- Métodos de instância
-- Encapsulamento
-- Manipulação de atributos
-- Entrada de dados com Scanner
-- Cálculo de valores
-- Organização do projeto em pacotes
+Este projeto foi desenvolvido durante os estudos do curso **Java COMPLETO – Programação Orientada a Objetos + Projetos**.
 
-##  Objetivo
-
-Este projeto faz parte dos meus estudos em **Java Moderno**, colocando em prática os fundamentos da Programação Orientada a Objetos utilizando uma solução simples e organizada para controle de estoque.
-
----
-
-Desenvolvido por **Thiago Sales** 
+➡️ Java COMPLETO – Programação Orientada a Objetos + Projetos (Udemy)<br>
+    https://www.udemy.com/course/java-curso-completo/
