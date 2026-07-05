@@ -10,22 +10,41 @@ public class Program {
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
-		var sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
+		Product product = new Product();
 		 System.out.println("Enter producto data:");
 		 
 		 System.out.println("Name: ");
-		 var name = sc.nextLine();
+		 product.name = sc.nextLine();
 		 
 		 System.out.println("Price: ");
-		 var price = sc.nextDouble();
+		 product.price = sc.nextDouble();
 		 
 		 System.out.println("Quantity in Stock: ");
-		 var quantity = sc.nextInt();
+		 product.quantity = sc.nextInt();
 		 
-		 var product = new Product(name, price, quantity);
+		
 		 
+		 System.out.println();
 		 System.out.println(product);
+		 
+		 System.out.println();
+		 System.out.println("Enter the number of product to be add in stock: ");
+		 int quantity = sc.nextInt();
+		 product.addProducts(quantity);
+		 
+		 System.out.println();
+		 System.out.println("Updated data: " + product);
+		
+		 System.out.println();
+		 System.out.println("Enter the number of product to be removed from stock:");
+		 quantity = sc.nextInt();
+		 product.removeProducts(quantity);
+		 
+		 System.out.println();
+		 System.out.println("Updated data: " + product);
+		 
 		sc.close();
 
 	}

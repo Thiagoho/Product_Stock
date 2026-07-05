@@ -1,7 +1,11 @@
 package entities;
 
-public record Product(String name, double price, int quantity) {
-	public double totalValueStock() {
+public class Product{
+	public String name; 
+	public double price; 
+	public int quantity;
+
+	public double totalValueInStock() {
 		return price * quantity;
 	}
 
@@ -15,14 +19,16 @@ public record Product(String name, double price, int quantity) {
 	}
 	
 	
+
 	/* vamos criar o toString ai para  deixar o main legível*/
 	public String toString() {
 		return name
-				+ "," 
-				+ String.format("%.2f, price)" //Tramento de exceção 
+				+ ", $"
+				+ String.format("%.2f", price)
 						+ ", "
 						+ quantity
-						+ "units, Total: $"
-						+ String.format("%.2f", totalValueStock()));//Tramento de exceção 
+						+" units, Total: $ "
+						+ String.format("%.2f", totalValueInStock());
+				
 	}
 }
